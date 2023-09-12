@@ -183,7 +183,8 @@ class adminLoginApp:
         def save_book(book_name):
             with open('books_data.json', 'r') as file:
                 users = json.load(file)
-            newBook={"text":book_name}
+            positions = 120
+            newBook={"text":book_name, "x": positions + 40}
             users.append(newBook)
             file_path = 'books_data.json'
             json_data = json.dumps(users)
@@ -396,7 +397,8 @@ class adminLoginApp:
         def save_book(book_name):
             with open('Elctronics_data.json', 'r') as file:
                 users = json.load(file)
-            newBook = {"text": book_name}
+            positions = 120
+            newBook = {"text": book_name, "x": positions + 40}
             users.append(newBook)
             file_path = 'Elctronics_data.json'
             json_data = json.dumps(users)
@@ -608,7 +610,8 @@ class adminLoginApp:
         def save_book(book_name):
             with open('Fashion.json', 'r') as file:
                 users = json.load(file)
-            newBook = {"text": book_name}
+            positions = 120
+            newBook = {"text": book_name, "x": positions + 40}
             users.append(newBook)
             file_path = 'Fashion.json'
             json_data = json.dumps(users)
@@ -819,7 +822,8 @@ class adminLoginApp:
         def save_book(book_name):
             with open('Sport.json', 'r') as file:
                 users = json.load(file)
-            newBook = {"text": book_name}
+            positions = 120
+            newBook = {"text": book_name, "x": positions + 40}
             users.append(newBook)
             file_path = 'Sport.json'
             json_data = json.dumps(users)
